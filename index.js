@@ -1,6 +1,6 @@
 const express = require('express');
 const path = require('path');
-const pagamentoRoutes = require('./routespagamento.cjs');
+const pagamentoRoutes = require('./routespagamento.js');
 
 const app = express();
 const PORT = process.env.PORT || 3000;
