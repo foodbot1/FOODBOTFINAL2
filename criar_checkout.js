@@ -1,7 +1,8 @@
 // criar_checkout.js
-import Stripe from 'stripe';
+const Stripe = require('stripe');
+require('dotenv').config();
 
-const stripe = new Stripe('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', {
+const stripe = new Stripe(process.env.STRIPE_SECRET_KEY, {
   apiVersion: '2023-10-16',
 });
 
